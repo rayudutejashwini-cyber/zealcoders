@@ -1,0 +1,209 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F5F8FF;
+    color:#0F172A;
+}
+
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h1{
+    font-size:40px;
+}
+
+h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+/* Hero */
+.hero{
+    background:#2563EB;
+    color:white;
+    padding:80px 20px;
+}
+
+.hero p{
+    margin:20px;
+}
+
+
+/* Button */
+.btn{
+    background:white;
+    color:#2563EB;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+
+/* Common Layout */
+.stats-container,
+.company-container,
+.story-container,
+.assist-container,
+.gallery-container,
+.contact-container{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+
+/* Common Cards */
+.card,
+.company,
+.story-card,
+.assist-card,
+.gallery-card,
+.contact-card{
+
+    background:white;
+    padding:20px;
+    width:230px;
+    border-radius:12px;
+    box-shadow:0 3px 10px lightgray;
+    transition:0.3s;
+}
+
+
+.card:hover,
+.company:hover,
+.story-card:hover,
+.assist-card:hover,
+.gallery-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* Placement */
+
+.card h3{
+
+    color:#2563EB;
+    font-size:30px;
+
+}
+
+.story-card h3,
+.contact-card h3{
+
+    color:#2563EB;
+
+}
+
+
+/* Gallery */
+
+.gallery-card{
+
+    padding:10px;
+
+}
+
+.gallery-card img{
+
+    width:350px;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+
+/* Contact Form */
+
+.contact-form{
+
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+    padding:12px;
+    border-radius:8px;
+    border:1px solid gray;
+
+}
+
+.contact-form textarea{
+
+    height:120px;
+
+}
+
+.contact-form button{
+
+    background:#2563EB;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+
+}
+
+
+/* WhatsApp */
+
+.whatsapp{
+
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#38BDF8;
+    color:white;
+    padding:15px;
+    border-radius:25px;
+    text-decoration:none;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:30px;
+    }
+
+    .card,
+    .company,
+    .story-card,
+    .assist-card,
+    .contact-card{
+
+        width:90%;
+
+    }
+
+    .gallery-card img{
+
+        width:300px;
+        height:auto;
+
+    }
+
+}
