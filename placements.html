@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placements | Zeal Coders</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-zeal">Zeal</span><span class="logo-coders">Coders</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="placements.html" class="active">Placements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="courses.html" class="nav-btn">Enroll Now</a></li>
+            </ul>
+
+            <!-- hamburger menu for mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <section class="hero">
         <h1>Build Your Career with Zeal Coders</h1>
         <p>We prepare students with industry-ready skills and connect them with top companies through dedicated placement support.</p>
@@ -99,5 +128,89 @@
         </div>
     </section>
 
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- about column -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <span class="logo-zeal">Zeal</span><span class="logo-coders">Coders</span>
+                        </div>
+                        <p class="footer-about">Helping students and job seekers build real IT careers through practical training, live projects and placement support since 2018.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- quick links -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="placements.html">Placements</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- courses -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Our Courses</h4>
+                        <ul class="footer-links">
+                            <li><a href="courses.html">Full Stack Web Dev</a></li>
+                            <li><a href="courses.html">Python Programming</a></li>
+                            <li><a href="courses.html">Java with DSA</a></li>
+                            <li><a href="courses.html">React JS</a></li>
+                            <li><a href="courses.html">UI/UX Design</a></li>
+                            <li><a href="courses.html">Data Science</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- contact info -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>123, IT Park Road, Pune, Maharashtra - 411001</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@zealcoders.com">info@zealcoders.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Sat: 9 AM to 7 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Zeal Coders Training Institute. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart" style="color: #ef4444;"></i> by Team Zeal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll to top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
